@@ -23,6 +23,7 @@
       cf_delete_stack: "{{ Stack.Delete | default(False) | bool }}"
       cf_disable_stack_policy: "{{ Stack.DisablePolicy | default(False) | bool }}"
       cf_disable_rollback: "{{ Stack.DisableRollback | default(False) | bool }}"
+      cf_termination_protection: "{{ Stack.TerminationProtection | default(False) | bool }}"
       cf_upload_s3: "{{ Stack.Upload | default(False) | bool }}"
       cf_stack_role: "{{ Stack.Role | default(None) }}"
       debug: "{{ debug | default(False) | bool }}"
